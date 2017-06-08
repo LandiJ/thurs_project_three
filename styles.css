@@ -1,16 +1,43 @@
+body {
+    margin-right: 250px;
+    margin-left: 250px;
+    border: 2px solid gray;
+}
+
 input {
-    width: 97%;
-    padding: 20px 0px 0px 0px;
+    width: 93%;
+    padding: 10px 0px 10px 10px;
     margin: 10px;
     border: 1px solid gray;
 }
 
-h1 {
-    text-align: center;
+header {
+    background-color: #2A86D2;
+    padding: 10px;
+    margin-bottom: 20px;
     color: white;
+    font-size: 30px;
     font-weight: lighter;
+    font-family: 'Muli', sans-serif;
 }
 
-header {
-    background-color: blue;
+select {
+    width: 95%;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 94%;
+    height: 100px;
+    margin: 20px 30px 20px 10px;
+    resize: none;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 25%;
+    padding: 9px;
 }
