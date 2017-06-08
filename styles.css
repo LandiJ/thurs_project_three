@@ -1,0 +1,16 @@
+input {
+    width: 97%;
+    padding: 20px 0px 0px 0px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+header {
+    background-color: blue;
+}
