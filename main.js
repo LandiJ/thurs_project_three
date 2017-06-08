@@ -89,12 +89,15 @@ function createTextInput() {
       var newInput = document.createElement("input");
       newInput.setAttribute("type", formData.type);
       newInput.setAttribute("placeholder", formData[i].label);
+      newInput.setAttribute("id", formData[i].id);
+      newInput.setAttribute("type", formData[i].type);
 
       form.appendChild(newInput);
     } else if (formData[i].type === "select") {
       var select = document.createElement("select");
       var defaultOption = document.createElement("option");
       //   defaultOption.value = formData[i].options[j].value;
+      select.setAttribute("id", formData[i].id);
       defaultOption.textContent = formData[i].label;
       defaultOption.default = true;
       select.appendChild(defaultOption);
@@ -116,13 +119,3 @@ function createTextInput() {
   }
 }
 createTextInput();
-function addSubmit() {
-  var form = document.querySelector("form");
-  var submitButton = document.createElement("input");
-  submitButton.setAttribute("type", "submit");
-  submitButton.setAttribute("value", "Submit Form");
-  submitButton.setAttribute("id", "submit");
-  form.appendChild(submitButton);
-}
-
-addSubmit();
